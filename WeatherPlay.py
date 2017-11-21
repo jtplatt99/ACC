@@ -5,7 +5,6 @@ from pyowm import OWM
 
 # Program is called at startup at /etc/rc.local
 
-
 APIKEY = 'Enter your OWM API key here'
 localID = 'Enter your OWM location ID number here'
 projectDir = 'Enter your project directory here'
