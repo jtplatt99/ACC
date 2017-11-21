@@ -24,11 +24,11 @@ while(1):
     w = obs.get_weather()
     time.sleep(5)
     if(w.get_status() == 'Snow'):
-      mixer.music.load(projectDir+'s{}.mp3'.format(datetime.now().hour))
+	mixer.music.load(projectDir+'s{}.mp3'.format(datetime.now().hour))
     elif(w.get_status() == 'Rain'):
-		  mixer.music.load(projectDir+'r{}.mp3'.format(datetime.now().hour))
+	mixer.music.load(projectDir+'r{}.mp3'.format(datetime.now().hour))
     else:
-		  mixer.music.load(projectDir+'/{}.mp3'.format(datetime.now().hour))
+	mixer.music.load(projectDir+'/{}.mp3'.format(datetime.now().hour))
     mixer.music.play(-1)
     time.sleep(60 *(59 - datetime.now().minute) + (55 - datetime.now().second))		# Waits for the next hour
     mixer.music.fadeout(5000)
